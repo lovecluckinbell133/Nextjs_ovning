@@ -1,6 +1,16 @@
-
-
 export async function GET() {
-    return Response.json({
-         message: "Hejsan Testar att datan kommer fram!"});
+    return Response.json(
+        {
+         "places": [
+            {
+            "namn": "Stockholm",
+              "country": "Sweden",
+            },
+
+            {
+              "namn" : "Oslo",
+              "country": "Norway",
+            },   
+                ]  
+        });
 }
